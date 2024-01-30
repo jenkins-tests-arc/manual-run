@@ -13,7 +13,7 @@ pipeline {
          }
         stage('deploy to Stage') {
              when {
-                 branch 'master'
+                 branch 'main'
              }
              steps {
                  echo 'Deploying to Staging from master...'
@@ -26,7 +26,7 @@ pipeline {
          }
          stage('deploy to Production') {
             when {
-                branch 'master'
+                branch 'main'
             }
             steps {
                 echo 'Deploying to Production from master...'
